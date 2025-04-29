@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+ <style>
+    /* General Styles */
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #080808;
+  --second-bg-color: #001005;
+  --text-color: white;
+  --main-color: #00FF51;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #dbdada;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  /* max-width: 1200px; */
+}
+
+/* About Me Section */
+.about-me {
+  padding: 50px 0;
+  background-color: #001005;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  color: #159e09;
+  margin-bottom: 30px;
+}
+
+.profile {
+  display: flex;
+  align-items: stretch;
+  height: 500px;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}
+
+/* Info Section */
+.info {
+  height: 350px;
+  width: 450px;
+  padding: 50px;
+  margin: 20px;
+  border: 1px solid rgb(15, 238, 7);
+}
+
+.name {
+  color: #0073e6;
+}
+
+p {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 15px;
+  color: #fff8f8;
+}
+
+h3 {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #18bb09;
+}
+
+.education {
+  list-style-type: none;
+  margin-top: 15px;
+}
+
+.education li {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.education li strong {
+  color: #0790a8;
+}
+
+/* Profile Image Section */
+.edu {
+  border: 1px solid rgb(0, 255, 0);
+  margin: 20px;
+  padding: 20px;
+  height: 350px;
+}
+
+.edu:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+}
+
+.info:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+}
+
+.image img {
+  width: 320px;
+  border-radius: 100px;
+  box-shadow: 0 8px 16px rgb(0, 255, 0);
+}
+
+/* Responsive Styles */
+
+/* For tablets and smaller screens (max-width 1024px) */
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Let the content grow */
+  }
+
+  .info {
+    width: 100%;
+    max-width: 500px; /* Reduce width on smaller screens */
+    margin: 10px 0;
+  }
+
+  .edu {
+    width: 100%;
+    max-width: 500px; /* Reduce width on smaller screens */
+    margin: 10px 0;
+  }
+
+  .image img {
+    width: 250px; /* Reduce image size */
+  }
+}
+
+/* For mobile screens (max-width 768px) */
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .info {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 20px;
+  }
+
+  .edu {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 20px;
+  }
+
+  .image img {
+    width: 220px; /* Reduce image size */
+  }
+
+  p {
+    font-size: 1rem; /* Adjust text size */
+  }
+
+  h3 {
+    font-size: 1.2rem; /* Adjust text size */
+  }
+}
+
+/* For very small mobile screens (max-width 480px) */
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .info {
+    width: 100%;
+    max-width: 350px;
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .edu {
+    width: 100%;
+    max-width: 350px;
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .image img {
+    width: 180px; /* Further reduce image size */
+  }
+
+  p {
+    font-size: 0.95rem; /* Adjust text size */
+  }
+
+  h3 {
+    font-size: 1.1rem; /* Adjust text size */
+  }
+}
+
+
+ </style>
+</head>
+<body>
+  <section class="about-me">
+    <div class="container">
+      <h1 class="title">About Me</h1>
+      <div class="profile">
+        <div class="info">
+                <h2>Hi, I'm <span class="name">Sahil</span></h2>
+                <p>I am a passionate Drupal Developer with 3 years of experience working at Venus Web Solutions Ltd. My expertise lies in creating scalable and dynamic websites using Drupal. I enjoy solving complex problems and optimizing the performance of websites to ensure they run smoothly.</p>
+            </div>
+            <div class="edu">
+
+                    <h3>Education</h3>
+                    <ul class="education">
+                        <li><strong>M.Com</strong> in 2019 from Mumbai University (75%)</li>
+                        <li><strong>B.Com</strong> in 2017 from Dalmia Lion’s College, Mumbai (65%)</li>
+                        <li><strong>HSC (Commerce)</strong> in 2014 from Dalmia Lion’s College, Mumbai (70%)</li>
+                        <li><strong>S.S.C</strong> in 2012 from Maharashtra State Board, Mumbai (76%)</li>
+                    </ul>
+            </div>
+        <div class="image">
+          <img src="neon-anime-girl-ai-artwork-709_420x.webp " alt="Profile Image">
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
