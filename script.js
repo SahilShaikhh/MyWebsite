@@ -1,7 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.getElementById('contact-form');
-    contactForm.addEventListener('submit', function(event) {
-        event.preventDefault();
-        alert('Message sent!');
-    });
+// Get elements
+const menuIcon = document.getElementById('menu-icon');
+const navbar = document.querySelector('.navbar');
+
+// Toggle menu visibility
+menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');
 });
